@@ -1,0 +1,13 @@
+<div *ngIf="item" class="product-details">
+    <h2>{{ item.title }}</h2>
+    <div class="split">
+        <img ngSrc="{{item.thumbnail}}" alt="{{ item.title }}" width="350" height="410" priority>
+        <div class="content">
+            <p class="c1">Product Description: {{ item.description }}</p>
+            <p class="c2">Stock: {{ item.stock }}</p>
+            <p class="c3">Category: {{ item.category }}</p>
+            <p class="c4">Price: ${{ item.price }}</p>
+            <app-button class="btn" text="Order" (btnClick)="emitEvent()"></app-button>
+        </div>
+    </div>
+</div>

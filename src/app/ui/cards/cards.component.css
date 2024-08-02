@@ -1,0 +1,11 @@
+
+.card{
+    height: 350px;
+    background-color: rgb(216, 179, 179);
+    margin-top: 20px;
+    color: black;
+    
+}
+.card-title{
+    margin-bottom: 20px;
+}

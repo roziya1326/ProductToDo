@@ -1,0 +1,98 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Product Details */
+.product-details {
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 900px;
+    background-color: #fff;
+}
+
+/* Centered Heading Styles */
+.product-details h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #444;
+    text-align: center; /* Center the title */
+}
+
+/* Layout for Product Details */
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between flex items */
+}
+
+/* Image Styles */
+.split img {
+    flex: 1 1 auto; /* Allows image to shrink or grow */
+    max-width: 100%;
+    max-height: 500px; /* Limit maximum height to reduce stretching */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px; /* Reduced border-radius for a more formal look */
+}
+
+/* Content Area Styles */
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Paragraph Styles */
+.content p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.c1{
+    color:#352336;
+    font-style: italic;
+    font-weight: bold;
+}
+.c4{
+    color: red;
+    font-weight: bold;
+}
+.c2{
+    color:black;
+}
+.c3{
+    color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .split {
+        flex-direction: column;
+    }
+
+    .split img {
+        margin-bottom: 20px; /* Space below image in column layout */
+    }
+}

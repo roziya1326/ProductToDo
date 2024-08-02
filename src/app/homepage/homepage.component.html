@@ -1,0 +1,11 @@
+<div class="container">
+    <div *ngFor="let category of getCategories()" class="category-section">
+      <h2 class="category">{{ category }}</h2>
+      <div class="row m-5">
+        <div class="category" *ngFor="let category of getProductsByCategory(category)" class="col-md-4">
+          <app-cards [item]="category" (btnClick)="productSelected($event)"></app-cards>
+        </div>
+      </div>
+    </div>
+</div>
+ 

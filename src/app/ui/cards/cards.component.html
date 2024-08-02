@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+    <img ngSrc="{{item.thumbnail}}" class="card-img-top" alt="..." width="400" height="200" priority>
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <!-- <p class="card-text">{{item.description}}</p>
+      <p class="card-text">Price: {{item.price}}</p> -->
+      <a (click)="goNextPage()" class="btn btn-primary">Buy Now</a>
+    </div>
+  </div>
